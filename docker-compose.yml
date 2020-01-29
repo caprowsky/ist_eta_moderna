@@ -70,8 +70,8 @@ services:
 # For macOS users (https://wodby.com/docs/stacks/drupal/local#docker-for-mac)
 #      - ./:/var/www/html:cached # User-guided caching
 #      - docker-sync:/var/www/html # Docker-sync
-    labels:
-      - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
+#    labels:
+#      - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
     ports:
       - "7000:80"
 
